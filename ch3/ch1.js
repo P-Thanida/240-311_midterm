@@ -11,7 +11,7 @@ client.connect(PORT, HOST, function() {
 client.on('data', function(data) {
    console.log('DATA: ' + data);
    if(data.toString()==='OK'||data.toString()==='WRONG'){
-      let ans=Math.floor(Math.random()*(71-50)+50);   //random 50 - 71   //console.log(Math.floor(Math.random() * (stop - start)) + start); 
+      let ans=Math.floor(Math.random()*(71-50)+50);  //console.log(Math.floor(Math.random() * (stop - start)) + start); 
       ans = parseInt(ans);
       client.write(ans.toString());
    }else if(data.toString()==='BINGO'){
