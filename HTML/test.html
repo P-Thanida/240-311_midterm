@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="w3-bar w3-black">
+        <a href="#home" class="w3-button w3-bar-item">Home</a>
+        <a href="#band" class="w3-button w3-bar-item">Band</a>
+        <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    </nav>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench"></i> Services</a>
+        <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+
+    <div>
+        <form>
+            <h1>Log In</h1>
+            <input id="username" type="text" id="login" name="username" placeholder="Username"> <br><br>
+            <input id="password" type="password" id="password" name="password" placeholder="Password"> <br><br>
+            <button onclick="check()">Log in</button>
+        </form>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script>
+        const check = () => {
+            if (document.getElementById("username").value == "foo" && document.getElementById("password").value == "bar")
+                alert('Good Job')
+            else
+                alert('Error')
+        }
+    </script>
+
+</body>
+
+</html>

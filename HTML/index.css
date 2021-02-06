@@ -1,0 +1,12 @@
+body {
+    background-color:black;
+    border: 1px solid rgb(245, 66, 95);
+   
+}
+
+h1{
+    border: 1px solid ;
+    padding: 10px;
+    background-color:rgb(245, 66, 95);
+}
+
